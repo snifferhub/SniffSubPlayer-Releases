@@ -1,7 +1,9 @@
-# SniffSubPlayer Android Releases
+# SniffSubPlayer Releases
 
-This repository distributes signed Android APK updates for SniffSubPlayer. The application source repository remains private.
+This repository distributes signed release packages for SniffSubPlayer. The application source repository remains private.
 
-Install the signed `SniffSubPlayer-Android.apk` from [Releases](https://github.com/snifferhub/SniffSubPlayer-Android-Releases/releases). After installing a version with the updater, use **Settings → Check for updates** inside the app.
+Android packages are published as `SniffSubPlayer-Android.apk` from [Releases](https://github.com/snifferhub/SniffSubPlayer-Releases/releases). After installing a version with the updater, use **Settings → Check for updates** inside the app.
 
-The `packages` branch contains a replaceable APK snapshot, version metadata, checksums, and this publishing workflow. Release assets retain historical versions. A server-side CI credential publishes these snapshots. The APK contains no access credentials for the private source repository.
+The private source repository builds and publishes Android packages directly to GitHub Releases. Each release includes an APK and `SHA256SUMS.txt`; historical assets remain immutable. This repository is platform-neutral so future iOS and other platform packages can be published here without another repository rename.
+
+The legacy `packages` branch and its workflow are retained for historical packages only. They are no longer part of the current Android publication path. Release packages contain no credentials for the private source repository.
